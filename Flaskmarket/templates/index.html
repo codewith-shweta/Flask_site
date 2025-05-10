@@ -1,0 +1,32 @@
+{% extends 'base.html'%}
+{%block title%}
+      Home Page
+{%endblock%}
+
+{%block content %}
+<h1> Welcome To Store </h1>
+<h2> Our Clients </h2>
+<marquee behavior="scroll" direction="right">
+      <img src="{{url_for('static', filename='pictures/del.jpeg')}}" alt="Description" width="100">
+      <img src="{{url_for('static', filename='pictures/samsung.png')}}" alt="SamSung" width="100"> 
+      <img src="{{url_for('static', filename='pictures/fb.png')}}" alt="FaceBook" width="100">
+      <img src="{{url_for('static', filename='pictures/insta.jpeg')}}" alt="InstaGram" width="100">
+      <img src="{{url_for('static', filename='pictures/tata.png')}}" alt="Tata" width="100">
+</marquee>
+<div class="insight">
+<h2> Success Deliver through our Insights </h2>
+<p>
+      Identifying lucrative opportunities for our clients runs in our DNA. When determining solutions, we exclusively focus on enabling them leverage their true growth potential.
+      Our services go beyond offering comprehensive studies, rather we inspire our clients to create discerning growth strategies.
+      Our insights are impeccable and backed by peer-driven research methods.
+      In short, we chalk out our clients’ success stories.
+</p>
+</div>
+<footer>
+      <h3> Trusted by </h3>
+      <img src="{{url_for('static', filename='pictures/ngo.jpeg')}}" width="100">
+      <img src="{{url_for('static', filename='pictures/comm.png')}}" width="100">
+</footer>
+
+A content of a Page 
+{%endblock%}

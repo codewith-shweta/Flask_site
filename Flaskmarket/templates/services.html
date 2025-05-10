@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}
+Our Services 
+{% endblock %}
+
+{% block content %}
+<div class="container">
+
+<div class="service">
+    <img src="{{url_for('static', filename='pictures/about.jpeg')}}" alt="Details" width="100">
+    <h1> 🌟 About Us</h1>
+    <p> We're growing digital market platform passionate about connecting buyers and sellers with simplicity.
+        Our mission is to empower local business by giving them the tools to succeed online form storefront setup to order delivery and customer service.
+    </p>
+
+    <div class="service">
+    <img src="{{url_for('static', filename='pictures/service.jpeg')}}" alt="Description" width="100">
+    <h1>😎 Our Services </h1>
+    <p> We provide valuable services to enhance your selling and buying experience. 
+        We provide smart, customer-focused services to help you buy and sell with ease, comfort, and confidence.</p>
+        </div>
+    <div class="service">
+        <img src="{{url_for('static', filename= 'pictures/brand.jpeg')}}" alt="packaging & Branding" width="100">
+        <h2> 🎁 Custom Packaging & Branding </h2>
+        <p> We help vendors design personalized packaging and labels to build brand logos.
+            Whether you're a small business or a large seller, our design experts work with you to create packaging that 
+            impresses your customers and builds trust. </p>
+    </div>
+    <div class="service">
+        <img src="{{url_for('static', filename='pictures/delivery.jpeg')}}" alt="service to your home" width="100">
+        <h2>🚚 Delivery & Logistics Support</h2>
+        <p> 
+            Our platform offers shipping management so u can focus on your business.
+            Manages shipping and delivery so you don’t have to.
+             Partner with us to ensure your customers receive their orders safely and on time</p>
+    </div>
+    <div class="service">
+        <img src="{{url_for('static', filename='pictures/support.jpeg')}}" alt="Contact Us" width="100">
+        <h2>📞 Customer Support</h2>
+        <p> Got questions? we're here day and night. Our trained support team is here 24/7.
+             Reach out via live chat or request a callback anytime.</p>
+    </div>
+</div>
+
+{% endblock %}

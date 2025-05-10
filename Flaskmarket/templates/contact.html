@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+{% block title %}
+Get in Touch 
+{%endblock%}
+{%block content%}
+<div class="contact_paage">
+    <h1> 🥰 Let's Get In Touch</h1>
+    <p>
+        If you have any questions, feedback, or query or even just want to say hello 
+        -we're are here for you!
+    </p>
+    <div class="contact-wrapper"> 
+        <div class="contact-form"> 
+    <form action="#" method="post">
+        <label for="name"> Name </label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email"> Email </label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message"> Message </label>
+        <textarea id="message" name="message" role="5" required>
+        </textarea>
+         <button type="submit" class="btn-success"> Send Message </button>
+        </form>
+        </div>
+        <div class="contact-info">
+            <img>
+            <p> <strong> Email: </strong> shwetkushwaha009@gmail.com </p>
+            <p> <strong> Phone: </strong> +919408188646 </p>
+            <p><strong>Location:</strong> Jamnagar, Gujarat, India</p>
+         </div>
+    </div>
+</div>
+{%endblock%}

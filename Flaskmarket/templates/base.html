@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <nav>
+      <a href="{{ url_for('home_page') }}" class="logo">Market</a>
+      <ul class="nav-links">
+          <li><a href="{{ url_for('home_page') }}">Home</a></li>
+          <li><a href="{{ url_for('market_page') }}">Market</a></li>
+          <li><a href="{{ url_for('services_page') }}">Services</a></li>
+          <li><a href="{{url_for('contact_page')}}">Contact</a></li>
+      </ul>
+  </nav>
+  
+  
+
+    {% block content %}{% endblock %}
+  </body>
+</html>
